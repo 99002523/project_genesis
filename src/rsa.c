@@ -8,7 +8,7 @@ void key_pair(long int e,long int n,long int d) {
 void encrypt(){
   long int pt,p,q,n,fn,e=2,temp,d,ct;
   printf("Enter your message to encrypt:\n");
-  scanf("%d",&pt);
+  scanf("%ld",&pt);
   printf("Enter two prime numbers p and q:\n");
   scanf("%ld %ld",&p,&q);
   n=p*q;
@@ -62,8 +62,9 @@ long int multipicative_inverse(long int m,long int b) {
 }
 long int findGCD(long int e,long int fn) {
   long int c=e,d=fn;
-  long int r;
+  
   while(d!=0) {
+      long int r;
     r=c%d;
     c=d;
     d=r;
