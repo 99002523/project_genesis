@@ -70,7 +70,7 @@ void monoalphabetic()
 void polyalphabetic()
 {
   char pt[20]={'\0'},ct[20]={'\0'},key[20]={'\0'},rt[20]={'\0'};
-    int i,j,apr;
+    int i,j,apr=0;
     printf("\n enter the plain text:");
     gets(pt);
     printf("\n enter the key:");
@@ -82,7 +82,7 @@ void polyalphabetic()
     apr++;
     for(i=apr;pt[i]!="\0";i++)
     {
-    if(j==strlen(key))
+    if(j==apr)
     {
     j=0;
     }
