@@ -82,7 +82,7 @@ void polyalphabetic()
     apr++;
     for(i=apr;pt[i]!="\0";i++)
     {
-    if(j==apr)
+    if(j==key)
     {
     j=0;
     }

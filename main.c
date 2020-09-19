@@ -31,6 +31,7 @@ void main(){
         }
     }
   }
+  test_main();
 }
 
 
