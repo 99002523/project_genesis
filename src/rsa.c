@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
 #include "rsa.h"
 
 void key_pair(long int e,long int n,long int d) {
