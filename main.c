@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 #include<string.h>
+#include "rsa.h"
 void RSA();
 void monoalphabetic();
 void polyalphabetic();
