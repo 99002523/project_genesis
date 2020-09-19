@@ -40,7 +40,7 @@ void monoalphabetic()
             printf("\n enter the plain text:");
             gets(p);
             //converting plain text into cipher text (encryption)
-            for(i=0;i<strlen(p);i++)
+            for(i=0;p[i]!="\0";i++)
             {
                         for(j=0;j<26;j++)
                         {
@@ -53,7 +53,7 @@ void monoalphabetic()
             printf("\n cipher text is: %s",c);
 
             //converting cipher text into plain text (decryption)
-            for(i=0;i<strlen(c);i++)
+            for(i=0;c[i]!="\0";i++)
             {
                         for(j=0;j<26;j++)
                         {
@@ -72,9 +72,9 @@ void polyalphabetic()
   char pt[20]={'\0'},ct[20]={'\0'},key[20]={'\0'},rt[20]={'\0'};
     int i,j;
     printf("\n enter the plain text:");
-    scanf("%s",pt);
+    gets(pt);
     printf("\n enter the key:");
-    scanf("%s",key);
+    gets(key);
 
     //length of plaintext equal to length of key
     j=0;
@@ -90,14 +90,14 @@ void polyalphabetic()
     printf("\n new key is:%s",key);
 
     //converting plain text to cipher text (encryption)
-    for(i=0;i<strlen(pt);i++)
+    for(i=0;pt[i]!="\0";i++)
     {
         ct[i]=(((pt[i]-97)+(key[i]-97))%26)+97;
     }
     printf("\n \n cipher text is:%s",ct);
 
     //converting cipher text to plain text (decryption)
-    for(i=0;i<strlen(ct);i++)
+    for(i=0;ct[i]!="\0";i++)
     {
     if(ct[i]<key[i])
     {
