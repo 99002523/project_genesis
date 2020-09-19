@@ -78,7 +78,7 @@ void polyalphabetic()
 
     //length of plaintext equal to length of key
     j=0;
-    for(i=strlen(key);i<strlen(pt);i++)
+    for(i=strlen(key);pt[i]!="\0";i++)
     {
     if(j==strlen(key))
     {
