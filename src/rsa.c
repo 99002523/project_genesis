@@ -38,7 +38,7 @@ void monoalphabetic()
             char p[20]={'\0'},c[20]={'\0'},r[20]={'\0'};
             int i,j;
             printf("\n enter the plain text:");
-            gets_s(p);
+            gets(p);
             //converting plain text into cipher text (encryption)
             for(i=0;p[i]!="\0";i++)
             {
@@ -72,9 +72,9 @@ void polyalphabetic()
   char pt[20]={'\0'},ct[20]={'\0'},key[20]={'\0'},rt[20]={'\0'};
     int i,j,apr=0;
     printf("\n enter the plain text:");
-    fgets(pt);
+    gets(pt);
     printf("\n enter the key:");
-    fgets(key);
+    gets(key);
 
     //length of plaintext equal to length of key
     j=0;
