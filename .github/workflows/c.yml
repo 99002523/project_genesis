@@ -1,4 +1,5 @@
--- name: C/C++ CI
+---#cyml 
+name: C/C++ CI
 
 on:
   push:
